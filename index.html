@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/c3baabe253.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Honeybees</title>
   </head>
   <body>
@@ -14,11 +18,36 @@
       <div class="logo">
         <h1>The Lifecycle of the Honeybee</h1>
       </div>
-      <ul class="nav-list">
-        <li class="list-item"><a href="./index.html">Source</a></li>
-        <li class="list-item"><a href="./coal.html">Source</a></li>
-        <li class="list-item"><a href="./grid.html">Source</a></li>
+      <ul class="nav-list" id="nav-list">
+        <li class="list-item">
+          <a
+            href="https://bees.techno-science.ca/english/bees/life-in-a-hive/queen-bee.php?image=image2"
+            >Canada Agriculture and Food Museum</a
+          >
+        </li>
+        <li class="list-item">
+          <a href="https://hbrc.ca/stages-of-bee-growth/"
+            >Honey Bee Research Center</a
+          >
+        </li>
+        <li class="list-item">
+          <a
+            href="https://www.uaex.uada.edu/farm-ranch/special-programs/beekeeping/about-honey-bees.aspx"
+            >University of Arkansas</a
+          >
+        </li>
       </ul>
+      <div class="menu" id="toggle-source">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </nav>
   </body>
+  <script>
+    const toggleSource = document.getElementById("toggle-source");
+    const navList = document.getElementById("nav-list");
+
+    toggleSource.addEventListener("click", () => {
+      navList.classList.toggle("active-source");
+    });
+  </script>
 </html>

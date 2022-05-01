@@ -1,7 +1,48 @@
-/* Decent Defaults */
+/* Share Styles */
 
 img,
 video {
   width: 100%;
   height: auto;
+}
+
+.navbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.1rem;
+}
+.nav-list {
+  list-style-type: none;
+  width: 100%;
+  display: none;
+}
+.nav-list .list-item {
+  display: block;
+  padding: 0.5rem 0.5rem;
+  border-top: 1px solid white;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+.menu {
+  display: block;
+  position: absolute;
+  right: 2rem;
+  top: 0.5rem;
+}
+.active-source {
+  display: block;
+}
+
+/* Mobile Only Styles */
+@media (max-width: 47.9375em) {
+}
+
+/* Desktop Only Styles */
+@media (min-width: 48em) {
 }
