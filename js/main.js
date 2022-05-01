@@ -1,21 +1,24 @@
-var firstName = "Lindsey";
-var lastName = "Hill";
-var age = "21";
-var favoriteFood = "ice cream";
+// Get
+const toggleSource = document.getElementById("toggle-source");
+const navList = document.getElementById("nav-list");
+// Define
 
-console.log(
-  `My name is ${firstName}. I am ${age} years old and I love to eat ${favoriteFood}.`
-);
+// Wire it up
+toggleSource.addEventListener("click", () => {
+  navList.classList.toggle("active-source");
+});
 
-/* make a variable called num with a value of 2.
-add 2+2 and store result in a new variable called result.
-console.log result.
-console.log full name as a var called fullName.
-*/
+window.onscroll = function () {
+  stickyNav();
+};
 
-var num = "2";
-var result = num + num;
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
 
-console.log(result);
-
-var fullName = `${firstName} ${lastName}`;
+function stickyNav() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
