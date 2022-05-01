@@ -58,6 +58,22 @@ video {
 .bubblegum-sans {
   font-family: "Bubblegum Sans", cursive;
 }
+
+.slideshow {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  position: relative;
+}
+.slideshow div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.slideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 /* Mobile Only Styles */
 @media (max-width: 47.9375em) {
 }
