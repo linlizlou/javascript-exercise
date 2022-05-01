@@ -36,7 +36,7 @@ function toggleSlide(from, to) {
 }
 
 function previous() {
-  var from = active;
+  var from = activeSlideshow;
   if (activeSlideshow <= 0) {
     activeSlideshow = slides.length - 1;
   } else {
