@@ -55,16 +55,68 @@ video {
   background-color: #fffaa0;
   min-height: 100vh;
 }
+.card.lifecycle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;
+}
+.card-images {
+  display: flex;
+  flex-direction: row;
+  max-height: 5vh;
+  max-width: auto;
+}
+.card-text {
+  max-width: 60%;
+  margin: 1em;
+}
+.card-image {
+  max-width: 30vw;
+}
+.card1-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 90vh;
+}
+#card3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 90vh;
+}
+#card4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 90vh;
+}
+#card5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 90vh;
+}
 
 .bubblegum-sans {
   font-family: "Bubblegum Sans", cursive;
+}
+.p * {
+  font-family: "Alegreya", serif;
 }
 
 .slideshow {
   aspect-ratio: 16 / 9;
   overflow: hidden;
   position: relative;
-  max-width: 60vw;
+  max-width: 50vw;
   padding-top: 2rem;
   margin: auto;
 }
@@ -105,6 +157,9 @@ video {
   margin: auto;
 }
 
+.prompt {
+  align-items: center;
+}
 /* Mobile Only Styles */
 @media (max-width: 47.9375em) {
   .slideshow {
