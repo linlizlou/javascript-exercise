@@ -64,6 +64,9 @@ video {
   aspect-ratio: 16 / 9;
   overflow: hidden;
   position: relative;
+  max-width: 60vw;
+  padding-top: 2rem;
+  margin: auto;
 }
 .slideshow div {
   width: 100%;
