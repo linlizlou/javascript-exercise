@@ -6,6 +6,13 @@ video {
   height: auto;
 }
 
+body {
+  background-color: #fffaa0;
+}
+
+.list-item a:hover {
+  color: orange;
+}
 .navbar {
   background-color: black;
   color: white;
@@ -171,16 +178,28 @@ a {
 }
 
 .container {
-  width: 992px;
+  width: 100vw;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-
+.container button {
+  padding: 0.5rem;
+  margin: 0.75rem;
+}
 .btn {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   cursor: pointer;
   outline: none;
+  background-color: #e4c15a;
+}
+.btn:hover {
+  background-color: green;
+  color: #fff;
 }
 
 .btn:active {
@@ -192,9 +211,23 @@ a {
   border: none;
   font-size: 1.5rem;
 }
+.close-modal:hover {
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+div.body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 .modal {
-  width: 450px;
+  width: 50vw;
   position: fixed;
   top: -50%;
   left: 50%;
@@ -206,17 +239,20 @@ a {
   background-color: #fff;
 }
 
+.modalimage {
+  max-width: 20%;
+}
+
 .modal.active {
-  top: 30%;
+  top: 40%;
 }
 
 .modal .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ccc;
+
   padding: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .modal .body {
@@ -241,6 +277,10 @@ a {
 @media (max-width: 47.9375em) {
   .slideshow {
     min-width: 70vw;
+    margin-top: 2rem;
+  }
+  .card-image {
+    min-width: 75vw;
   }
 }
 
